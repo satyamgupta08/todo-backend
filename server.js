@@ -36,7 +36,9 @@ app.get('/todos', async (req, res) => {
         todos,
     });
 });
-
+app.get("/",()=>{
+return  res.json("hello");
+})
 // Mark a todo as completed or not completed
 app.put('/completed', async (req, res) => {
     const updatePayload = req.body;
